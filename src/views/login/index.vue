@@ -13,7 +13,8 @@
       >
         <el-form-item label-width="0">
           <div class="login-title">
-            <img src="@/assets/img/logo.png" alt />
+            <!-- <img src="@/assets/img/logo.png" alt /> -->
+            <h3><span>AISANY</span> 模型测试平台</h3>
           </div>
         </el-form-item>
         <el-form-item prop="account" label-width="0">
@@ -51,8 +52,8 @@ export default {
       disable: false,
       showLoading: false,
       form: {
-        account: "",
-        password: "",
+        account: "admin",
+        password: "sany318!",
       },
       rules: {
         account: [{ required: true, message: "请输入账号", trigger: "blur" }],
@@ -142,6 +143,12 @@ export default {
   width: 100%;
   padding-bottom: 10px;
   text-align: center;
+  h3 {
+    color: #fff;
+    span {
+      color: #f00;
+    }
+  }
 }
 .login-form-group .el-input {
   width: 70%;
